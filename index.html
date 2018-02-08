@@ -10,7 +10,7 @@
   
   h2 {
     color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 1px 1px 2px black, 0 0 30px blue, 0 0 5px darkblue;
     font-family: verdana;
     font-size: 200%;
   }
@@ -34,12 +34,49 @@
   
   
   <form>
-    Enter a starting value and choose the units to convert:
-    <input type="text" name="number">
-    <br>
+    Enter a starting value to convert:
+    <input id="Value" type="number" name="startingValue">    
   </form>
+  <br>
+Choose starting units:
+<select name="unitsStarting">
+  <option value="km">Kilometers</option>
+  <option value="ft">Feet</option>
+  <option value="m">Meters</option>
+  <option value="mi">Miles</option>
+
+</select>
   
+  <br>
+  <br>
   
+Choose final units:
+<select name="unitsStarting">
+  <option value="km">Kilometers</option>
+  <option value="ft">Feet</option>
+  <option value="m">Meters</option>
+  <option value="mi">Miles</option>
+
+</select> 
   
+  <br>
+  <br>
+
+  <button onclick="myFunction()">Convert</button>
+ 
+  <script>
+    function myFunction() {
+      var Value=document.getElementById("Value").value;
+      alert(Value);
+    }
+  </script>
+    
 </body>
 </html>
+
+
+
+
+
+
+
